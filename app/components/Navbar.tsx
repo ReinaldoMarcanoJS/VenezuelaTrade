@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa6";
 import React from "react";
 import { CiSearch, CiShoppingCart } from "react-icons/ci";
-import { IoMenu } from "react-icons/io5";
+import { IoMenuSharp } from "react-icons/io5";
 export const Navbar = () => {
   return (
     <header className=" w-full sm:py-1 top-0 sm:px-4 lg:px-14 sm:shadow-md bg-slate-50">
@@ -21,14 +21,14 @@ export const Navbar = () => {
             className="hidden sm:block w-full md:w-[500px] h-9 bg-white border shadow-sm focus:ring-indigo-500 focus:border-indigo-500  sm:text-sm border-gray-300 rounded-md focus-visible:border-indigo-500"
           />
           <CiShoppingCart size={35} className="hover:bg-slate-500 hidden sm:block" />
-          <IoMenu size={35} className="sm:hidden"/>
+          <IoMenuSharp size={30} className="sm:hidden" color="#677D7B"/>
         </div>
       </section>
 
-        <div className="sm:hidden flex gap-3 mx-2 mb-1.5">
+        <div className="sm:hidden flex justify-stretch gap-2 mx-2 mb-1.5">
         <input
             type="text"
-            className="block sm:hidden w-full md:w-[500px] h-7 bg-white border shadow-sm focus:ring-indigo-500 focus:border-indigo-500  sm:text-sm border-gray-300 rounded-md focus-visible:border-indigo-500"
+            className="block sm:hidden w-full mb-2 md:w-[500px] h-7 bg-white border shadow-sm focus:ring-indigo-500 focus:border-indigo-500  sm:text-sm border-gray-300 rounded-md focus-visible:border-indigo-500"
           />
           <CiSearch size={28}/>
         </div>

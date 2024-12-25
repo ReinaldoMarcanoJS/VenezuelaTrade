@@ -105,6 +105,26 @@ export const CategoriesDasboard = () => {
     speed: 500,
     rows: 2,
     slidesPerRow: 2,
+    responsive: [
+      {
+        breakpoint: 554,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidersPeRow: 2,
+          rows:2
+        }
+      },
+      {
+        breakpoint: 324,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidersPeRow: 1,
+          rows:2
+        }
+      }
+    ]
   };
   return (
     <div key={1} className="container min-w-screen ">
@@ -121,7 +141,7 @@ export const CategoriesDasboard = () => {
               key={id}
               className=" my-2 p-1   rounded-md flex flex-col items-center justify-center   text-[#018598] hover:text-[#05415F]"
             >
-              <h2 className="text-xl  bg-slate-50 font-medium font-sans tracking-tight  px-2 rounded-t-lg">
+              <h2 className="text-base md:text-xl  bg-slate-50 font-medium font-sans tracking-tight  px-2 rounded-t-lg">
                 {name}
               </h2>
               <Image alt={name} width={300} height={300} src={image} />

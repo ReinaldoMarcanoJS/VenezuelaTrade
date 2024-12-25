@@ -110,9 +110,9 @@ export const Categories = () => {
 };
 const Card = ({ title, button, description, image }: CardProps) => {
   return (
-    <div className="m-auto slide w-28 h-36 sm:w-32 sm:h-40  md:w-44 md:h-60 lg:w-52 lg:h-64  bg-white rounded-lg shadow-md  mt-5 flex justify-between flex-col items-center p-1">
-      <div className="md:pt-2">
-        <h5 className="md:mb-2 text-xs lg:text-xl font-medium font-sans tracking-tight text-gray-900">
+    <div className="m-auto slide w-28 h-36 sm:w-32 sm:h-40  min-[850px]:w-40 min-[850px]:h-56 lg:w-52 lg:h-64  bg-white rounded-lg shadow-md  mt-5 flex justify-between flex-col items-center p-1">
+      <div className="min-[850px]:pt-2">
+        <h5 className="min-[850px]:mb-2 text-xs lg:text-xl font-medium font-sans tracking-tight text-gray-900">
           {title}
         </h5>
       </div>
@@ -122,14 +122,14 @@ const Card = ({ title, button, description, image }: CardProps) => {
           height={112}
           src={image}
           alt={title}
-          className="w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 m-auto drop-shadow-lg rounded-lg"
+          className="w-14 h-14 sm:w-20 sm:h-20 lg:w-28 lg:h-28 m-auto drop-shadow-lg rounded-lg"
         />
-        <p className="font-normal text-[8px] md:text-xs text-center text-gray-700  lg:my-2 ">
+        <p className="font-normal text-[8px] min-[850px]:text-xs text-center text-gray-700  lg:my-2 ">
           {description}
         </p>
       </div>
-      <div className="w-full flex md:mb-1">
-        <button className="w-full md:w-11/12 text-[#018598] m-auto border shadow-md focus:ring-4 rounded-md text-[10px] md:text-sm font-semibold sm:py-1 md:py-2 text-center">
+      <div className="w-full flex min-[850px]:mb-1">
+        <button className="w-full min-[850px]:w-11/12 text-[#018598] m-auto border shadow-md focus:ring-4 rounded-md text-[10px] min-[850px]:text-sm font-semibold sm:py-1 min-[850px]:py-2 text-center">
           {button}
         </button>
       </div>
