@@ -1,9 +1,6 @@
-import Image from "next/image";
 import type { ReactNode } from "react";
 import { StoreProvider } from "./StoreProvider";
-
 import "./styles/globals.css";
-import styles from "./styles/layout.module.css";
 
 interface Props {
   readonly children: ReactNode;
@@ -14,7 +11,7 @@ export default function RootLayout({ children }: Props) {
     <StoreProvider>
       <html lang="es">
         <body className="bg-gradient-to-t  to-[#0a4169be] via-[#0a416939] from-transparent">
-            {children}
+          {children}
         </body>
       </html>
     </StoreProvider>

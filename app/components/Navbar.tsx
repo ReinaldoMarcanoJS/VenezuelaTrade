@@ -67,7 +67,7 @@ export const Navbar = () => {
             <Link href="/settings">Ajustes</Link>
           </li>
           <li className="flex items-center gap-3">
-            <Link href="/logout">Cerrar Sesión</Link>
+            <Link href="/login">Iniciar Sesión</Link>
           </li>
         </ul>
       </div>

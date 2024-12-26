@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect } from "react";
-import { Categories, Imagestype } from "@/types";
+import React from "react";
+import { Categories} from "@/types";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -128,9 +128,9 @@ export const CategoriesDasboard = () => {
   };
   return (
     <div key={1} className="container min-w-screen ">
-      <div className="mb-3 bg-slate-50 p-2 m-auto rounded-t-md shadow-lg flex justify-between items-center px-8">
-        <p className="font-medium text-lg">Categorias</p>
-        <p className="text-[#018598] text-sm font-semibold hover:text-[#05415F] cursor-pointer">
+      <div className=" md:mb-3 bg-slate-50 p-1 md:p-2 m-auto rounded-t-md shadow-lg flex justify-between items-center px-8">
+        <p className="font-medium text-base md:text-lg">Categorias</p>
+        <p className="text-lightblue text-xs md:text-sm font-semibold hover:text-darkblue cursor-pointer">
           Mostrar todas {">>"}
         </p>
       </div>
@@ -139,9 +139,9 @@ export const CategoriesDasboard = () => {
           {categories.map(({ creationAt, id, image, name, updatedAt }) => (
             <div
               key={id}
-              className=" my-2 p-1   rounded-md flex flex-col items-center justify-center   text-[#018598] hover:text-[#05415F]"
+              className=" md:my-2 p-1   rounded-md flex flex-col items-center justify-center   text-lightblue hover:text-darkblue"
             >
-              <h2 className="text-base md:text-xl  bg-slate-50 font-medium font-sans tracking-tight  px-2 rounded-t-lg">
+              <h2 className="text-sm md:text-xl  bg-slate-50 font-medium font-sans tracking-tight  px-2 rounded-t-lg">
                 {name}
               </h2>
               <Image alt={name} width={300} height={300} src={image} />
